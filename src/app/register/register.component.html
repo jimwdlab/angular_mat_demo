@@ -9,7 +9,7 @@
 
         <mat-form-field appearance="fill">
             <mat-label>Email</mat-label>
-            <input matInput placeholder="Enter Email" formControlName="email">
+            <input matInput type="email" placeholder="Enter Email" formControlName="email">
             <mat-error *ngIf="formdata.controls['email'].invalid && formdata.controls['email'].touched">
                 Email is required and must be a valid email.
             </mat-error>
@@ -17,7 +17,7 @@
 
         <mat-form-field appearance="fill">
             <mat-label>Password</mat-label>
-            <input matInput placeholder="Enter password" formControlName="password">
+            <input matInput type="password" placeholder="Enter password" formControlName="password">
             <mat-error *ngIf="formdata.controls['password'].invalid && formdata.controls['password'].touched">
                 Password is required and must be at least 8 characters long.
             </mat-error>
